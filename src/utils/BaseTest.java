@@ -1,11 +1,11 @@
 package utils;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 	
@@ -13,6 +13,7 @@ public class BaseTest {
 	public BasePage app;
 	
 	@BeforeClass
+  
 	public void setup() {
 		//System.setProperty("webdriver.chrome.driver", "path catre/chromedriver.exe")
 		driver = new ChromeDriver();
